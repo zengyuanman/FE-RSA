@@ -9,18 +9,19 @@
 ## demo运行指引
 进入node 目录，运行 grunt
 
->为方便调试，使用了 nodemon 进行文件监听，自动重启 node服务
+> 为方便调试，使用了 nodemon 进行文件监听，自动重启 node服务
 
 
 ## 关于微信小程序的补充
 在微信小程序中，没有 window 对象，没有html5中提供的伪随机数生成函数，jsencrypt库中挂载在 window 对象下面的对象也不可用，同时由于微信小程序独特的引用方式，对原版本的jsencrypt进行了一些小改动。
 在小程序中使用修改过的jsencrypt库，通过 require 引用，其他的同网页版。
 
->在目录 node/wxap中有针对小程序的简易修改版jsencrypt
+> 在目录 * node/wxapp * 中有针对小程序的简易修改版jsencrypt
 
+***
 
 ##相关版权
-本项目服务端由 Express脚手架搭建
-本项目 grunt 打包模块  来自 Sails 框架的 grunt 模块
-本项目前端 RSA 加密库来自 https://github.com/travist/jsencrypt
+- 本项目服务端由 Express脚手架搭建  
+- 本项目 grunt 打包模块  来自 Sails 框架的 grunt 模块  
+- 本项目前端 RSA 加密库来自  [jsencrypt](https://github.com/travist/jsencrypt)  
 
